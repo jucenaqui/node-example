@@ -6,11 +6,11 @@ const app = express();
 app.use(parser.json());
 
 const routeUser = require('./route/user');
-const routeAlbum = require('./route/album');
+const routeArtist = require('./route/artist');
 
 
 
 app.use('/api', routeUser);
-app.use('/api', routeAlbum);
+app.use('/api', routeArtist);
 
 module.exports = app;
